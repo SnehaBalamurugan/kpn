@@ -1,0 +1,68 @@
+.category-container {
+    display: flex;
+    height: 140vh; /* Full viewport height */
+    overflow: hidden; /* Prevent content overflow */
+    margin-top: 8%;
+    
+}
+
+.left-list {
+    width: 200px;
+    margin-left: 15px;
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Scrollable if list exceeds viewport height */
+    position: fixed; /* Fix the left list position */
+    z-index: 1;
+    background-color: white; /* Ensure background color covers the list */
+}
+
+.right-content {
+    margin-left: 220px; /* Account for the width of the fixed left side */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjust width to fill the remaining space */
+}
+
+.right-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right-divider {
+    margin: 10px 0;
+}
+
+.right-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+}
+
+.card-item {
+    width: 180px; /* Adjusted to fit 5 cards per row */
+    height: 350px; /* Set card height */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-discount {
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}
+
+.card-save {
+    font-size: 16px;
+    color: green;
+    text-align: center;
+}
+
+.add-button {
+    width: 125px;
+    margin-top: 10px;
+    background-color: rgb(243, 243, 86);
+    color: black;
+}
